@@ -1,0 +1,297 @@
+:root {
+    --main-color: #bf8c4c;
+    --secondary-color: #232323;
+    --white-color: #fff;
+    --body-color: #828282;
+    --border-color: #e4e4e4;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--body-color);
+}
+
+#home {
+    background-image: url(../images/cover_res.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+}
+
+h1 {
+    width: 75%;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.home-content-link::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: var(--main-color);
+    position: absolute;
+    border-radius: 15px;
+    z-index: 0;
+    left: -15px;
+    top: -3px;
+    transition: width 1s;
+
+}
+
+.home-content-link:hover::before {
+    width: calc(100% + 30px);
+}
+
+.home-content-link i {
+    transition: 1s;
+}
+
+.home-content-link:hover i {
+    transform: translate(30%);
+}
+
+.home-images {
+    transition: all 1s;
+}
+
+.home-images:hover {
+    transform: matrix(1, 0, 0, 1, -22, 3)
+}
+
+.service-item p {
+    margin-bottom: 0;
+
+}
+
+.service-item i {
+    font-size: 35px;
+
+}
+
+.service,
+#logos {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.about-img {
+    top: 29%;
+    right: -1%;
+}
+
+.about-head>::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    margin-right: 1.25rem;
+    background-color: var(--main-color);
+}
+
+.section-link {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--white-color);
+    transition: .5s;
+}
+
+.section-link:hover {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+
+
+.section-header_subHeader {
+    font-size: 16px;
+
+}
+
+.section-header_subHeader::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--main-color);
+    margin-right: 0.625rem;
+
+}
+
+.section-header_subHeader::after {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--main-color);
+    margin-left: 0.625rem;
+
+}
+
+.section-header Header {
+    font-weight: 700px;
+    color: var(--secondary-color);
+
+}
+
+.main-content a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 30px;
+    transition: all .5s;
+}
+
+.banner-content {
+    transform: translatey(calc(100% - 105px));
+    transition: all .5s;
+}
+
+.banner-content p {
+    opacity: 0;
+    color: gray;
+}
+
+.banner-content a {
+    opacity: 0;
+
+}
+
+.specialization-item:hover .banner-content {
+    transform: translatey(0px);
+    background-color: var(--secondary-color);
+}
+
+.specialization-item:hover p,
+.specialization-item:hover a {
+    opacity: 1;
+}
+
+.specialization-item:hover .main-content a {
+    transform: translatey(100%);
+    opacity: 0;
+}
+
+.product-item span {
+    transform: translate(20%);
+    transform-origin: left center;
+    transition: transform 0.3s cubic-bezier(0.2, 0.95, 0.25, 1)0s;
+    display: inline-block;
+}
+
+.product-item i {
+    transform: scale(0) translatex(0);
+    transform-origin: left center;
+    transition: transform 0.3s cubic-bezier(0.2, 0.95, 0.25, 1)0s;
+
+}
+
+.product-item:hover i {
+    transform: scale(1) translateX(0);
+
+
+}
+
+.product-item:hover span {
+    transform: translateX(0);
+
+
+}
+
+#ideas .item h3 {
+    color: var(--secondary-color);
+}
+
+#ideas .item {
+    background-repeat: no-repeat;
+    background-position: right 5px bottom -25px;
+}
+
+.idea-content {
+    background-image: url(../images/home-decor-img-05.png);
+}
+
+.idea-content-2 {
+    background-image: url(../images/home-decor-img-06.png);
+}
+
+#logos img {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#logos img:hover {
+    opacity: 1;
+
+}
+
+.types-item i {
+    font-size: 1.8rem;
+
+}
+
+.types-item {
+    background-size: cover;
+   
+
+}
+
+#types .item1 {
+    background-image: url(../images/home-decor-img-18.jpg);
+}
+
+#types .item2 {
+    background-image: url(../images/home-decor-img-17.jpg);
+}
+
+#types .item3 {
+    background-image: url(../images/home-decor-img-19.jpg);
+}
+
+#types .item4 {
+    background-image: url(../images/home-decor-img-20.jpg);
+}
+
+#types .types-inner {
+    background-color: var(--white-color);
+    transition: .5s;
+}
+#types .types-item:hover .types-inner {
+    background-color: transparent;
+}
+#types .types-item:hover .types-inner *{
+   color: var(--white-color);
+}
+#footer a{
+color :var(--body-color)
+}
+#footer a:hover{
+color :var(--main-color)
+}
+.top-footer{
+    border-bottom: 1px solid rgb(255, 255, 255,.1);
+}
+.bottom-footer img{
+max-height: 60px;
+width: 120px;
+}
+.bottom-footer {
+padding-block: 2rem;
+}
+
+nav img{
+    width: 110px;
+}
+nav .nav-link , .navbar   i {
+color: var(--secondary-color);
+}
+.navbar .main-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-inline: 2rem;
+    background-color: var(--white-color);
+    z-index: 999;
+}

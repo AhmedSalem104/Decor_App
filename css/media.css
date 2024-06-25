@@ -1,0 +1,49 @@
+@media(min-width: 576px) {
+    #home{
+        background-image: url(../images/cover.png);
+    }
+    .home-images{
+        width:50%
+    }
+    h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .home-content{
+        width: 40%;
+    }
+   /*  .grid-parent{
+
+    } */
+}
+
+@media(min-width: 768px) {
+   
+    .home-content{
+        width: 30%;
+    }
+ 
+}
+
+
+@media(min-width: 992px) {
+   
+    .navbar .main-menu{
+        position: static;
+       
+        background-color: transparent;
+    
+    }
+ 
+}
+
+
+@media(min-width: 120px) {
+   
+    h1{
+        width: 100%;
+        font-size:4rem;
+        line-height: 4rem;
+    }
+ 
+}

@@ -1,0 +1,50 @@
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.text-secondary-color {
+    color: var(--secondary-color);
+}
+.section-padding{
+    padding-block: 50px;
+}
+.w-70{
+    width: 70%;
+}
+.text-medium{
+    font-size: 14px;
+    line-height: 20px;
+}
+.btn-custom{
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.bg-section{
+    background-color: #f9f6f3;
+}
+.secondary-btn{
+    background:var(--main-color);
+    border-color: var(--main-color);
+    color: var(--white-color);
+}
+.secondary-btn:hover{
+    background:transparent;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.border-bottom-custom{
+    border-bottom: 1px solid var(--border-color);
+}
+.border-bottom-right-custom{
+    border-bottom: 1px solid var(--border-color);
+
+}
